@@ -8,13 +8,14 @@ body, html {
 
 .pantalla {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .oculto {
@@ -42,8 +43,11 @@ button:hover {
     opacity: 0;
 }
 
-.mensaje-largo {
-    margin-bottom: 30px;
+.mensaje-largo p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    text-align: justify; 
+    padding: 10px; 
 }
 
 .mensaje-largo h2 {
@@ -62,6 +66,8 @@ button:hover {
 
 .swiper-slide img {
     width: 100%;
+    height: auto;
+    object-fit: cover; 
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
